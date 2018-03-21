@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
 	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans+Condensed:300" rel="stylesheet">
-<title>CSS Template #1</title>
+	<script src="mywebsite.js"></script>
+<title>Meraki Graphic Design</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="style.css">
@@ -14,23 +15,64 @@
 	
 
 <div class="topnav">
-  <a href="#">Home</a>
-  <a href="#">About Us</a>
-  <a href="#">Portfolio</a>
+  <a class="active" href="#home">Home</a>
+  <a href="#news">Portfolio</a>
+  <a href="#contact">Contact Me</a>
+  <a href="#about">About Us</a>
 </div>
 
 <div class="content">
   <h2>Graphic Design Studio</h2>
   <p style="font-family: Helvetica">The life of a designer is a life of fight against the ugliness.</p>
 </div>
-<div id="laptop"><img id="laptop1" src="laptop01.jpg">
+<!-- <div id="laptop"><img id="laptop1" src="laptop01.jpg">
+</div> -->
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="laptop3.jpg" style="width:100%">
+    <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="woman.jpg" style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="photo1.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+
 
 
 <div class="footer">
 	<a style="color: white; href="#">Contact Us: 407.508.2002.</a>
   <p>footer</p>
 </div>
+<script type="text/javascript">
+	showSlides();
 
+
+</script>
 </body>
 </html>
